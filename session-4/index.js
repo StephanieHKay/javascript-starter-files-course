@@ -1,14 +1,45 @@
 // ****************************************************TASK 1 - OBJECTS****************************************************
 
 
+let personA = {
+    name: "A",
+    age: 32,
+    location: "London",
+    likes: "Tea",
 
+}
 
+let personB = {
+    name: "B",
+    age: 22,
+    location: "Leeds",
+    likes: "Pizza",
 
+}
 
+let personC = {
+    name: "C",
+    age: 43,
+    location: "Brighton",
+    likes: "Swimming",
 
+}
 
+let personD = {
+    name: "D",
+    age: 29,
+    location: "Wales",
+    likes: "Biscuits",
 
+}
 
+console.log(personC.location)
+
+function biopgraphy(person){
+    return `Hi my name is ${person.name}. I am ${person.age} years old, I live in ${person.location} and i like ${person.likes}`
+}
+
+console.log(biopgraphy(personD))
 
 
 

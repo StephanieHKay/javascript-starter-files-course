@@ -130,7 +130,8 @@ else{
 
 
 const stored_password = "123pass"
-const user_input = prompt("Enter your password: ");
+//const user_input = prompt("Enter your password: ");
+const user_input = "123"
 
 if (stored_password === user_input){
     console.log("Access granted, logging in...")
@@ -140,10 +141,88 @@ else{
 }
 
 
+console.log("Ternary")
+//Terniary operator - similar to if satements
+//a condition is followed by a question mark
+//an expression to execute if the condiiton is true is followed by a colon :
+//finally there is an expression to execute if the condiiton is false
+function getFee(isMember){
+    return isMember ?"£2.00": "£10.00";
+} // if member 2 will be returned otherwise 10 will be returned
+function check_even_number(num){
+    return (num%2 ==0) ? true:false;
+}
+
+console.log(check_even_number(2))
+console.log(check_even_number(5))
+
+//switch statements can replace multiple if checks and can compare a value with multiple variants
+//switch has one or more case blocks adn an optional defauly
+let x=3
+switch(x){
+    case 3: //ie if (x === 3)
+        console.log("Too small");
+        break  
+    case 4:   //ie if (x==="value2")
+        console.log("Perfect");
+        break 
+    default:
+        console.log("I dont know");
+        break
+}
+
+
+function checkname(name){
+    switch(name){
+        case "Harjeet":
+            return ("Couse instructor");
+        case "Samuel":
+            return ("Couse instructor");
+        case "Sarah":
+            return ("Couse manager");
+        case "Charleen":
+            return ("Founder")
+        default:
+            return ("Member")
+
+    }
+}
+
+
+console.log(checkname("Tom"))
+
+
+function calculator(num1, num2, operation){
+    switch(operation){
+        case "add":
+            return num1+num2;
+        case "minus":
+            return num1-num2;
+        case "divide":
+            return num1/num2;
+        case "multiply":
+            return num1 * num2;
+        
+    }
+}
+
+console.log(calculator(7,3, "multiply"))
 
 
 
+//objects ie dictionary with key and value
+let person2 = {
+    name: "Monique",
+    likes: "pizza"
+}
 
+//dot notation to access an object properties
+console.log(person2.name);
+console.log(person.likes);
+
+person2.likes = "spaghetti"
+
+console.log(person2)
 
 
 
